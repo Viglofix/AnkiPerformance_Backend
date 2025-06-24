@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=Gungex15!
+      - POSTGRES_USER=vig
+    ports:
+      - 5433:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - 5472:5672
+      - 15672:15672
+volumes:
+  pgdata:
+      

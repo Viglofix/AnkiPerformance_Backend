@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>8c6def00-19e1-46dd-befa-b9ad8789a102</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AnkiCommunicationService\AnkiCommunicationService.csproj" />
+    <ProjectReference Include="..\..\src\BffService\BffService.csproj" />
+    <ProjectReference Include="..\..\src\DesktopService\DesktopService.csproj" />
+  </ItemGroup>
+
+</Project>
